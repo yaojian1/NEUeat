@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="46" passed="42" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-13T10:19:15Z" name="Surefire suite" finished-at="2020-12-13T10:19:23Z" duration-ms="7823">
+    <groups>
+    </groups>
+    <test started-at="2020-12-13T10:19:15Z" name="Surefire test" finished-at="2020-12-13T10:19:23Z" duration-ms="7823">
+      <class name="com.cs5500.NEUEat.controller.OrderControllerTest">
+        <test-method signature="addComment() throws java.lang.Exception" started-at="2020-12-13T10:19:23Z" name="addComment" finished-at="2020-12-13T10:19:23Z" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComment -->
+        <test-method signature="checkoutUsers() throws java.lang.Exception" started-at="2020-12-13T10:19:23Z" name="checkoutUsers" finished-at="2020-12-13T10:19:23Z" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutUsers -->
+        <test-method signature="addOrderToCart() throws java.lang.Exception" started-at="2020-12-13T10:19:23Z" name="addOrderToCart" finished-at="2020-12-13T10:19:23Z" duration-ms="17" status="FAIL">
+          <exception class="org.springframework.web.util.NestedServletException">
+            <message>
+              <![CDATA[Request processing failed; nested exception is java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+at com.cs5500.NEUEat.controller.OrderControllerTest.addOrderToCart(OrderControllerTest.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+at org.testng.TestRunner$1.run(TestRunner.java:570)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:717)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:601)
+at org.testng.TestRunner.run(TestRunner.java:502)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NullPointerException
+at com.cs5500.NEUEat.service.OrderServiceImpl.addOrderToCart(OrderServiceImpl.java:25)
+at com.cs5500.NEUEat.controller.OrderController.addOrderToCart(OrderController.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+... 59 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.web.util.NestedServletException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOrderToCart -->
+        <test-method signature="deleteComment() throws java.lang.Exception" started-at="2020-12-13T10:19:23Z" name="deleteComment" finished-at="2020-12-13T10:19:23Z" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteComment -->
+        <test-method signature="deleteOrder() throws java.lang.Exception" started-at="2020-12-13T10:19:23Z" name="deleteOrder" finished-at="2020-12-13T10:19:23Z" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteOrder -->
+      </class> <!-- com.cs5500.NEUEat.controller.OrderControllerTest -->
+      <class name="com.cs5500.NEUEat.controller.CustomerControllerTest">
+        <test-method signature="getCustomerById() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="getCustomerById" finished-at="2020-12-13T10:19:21Z" duration-ms="5801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCustomerById -->
+        <test-method signature="getOrderHistory() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="getOrderHistory" finished-at="2020-12-13T10:19:21Z" duration-ms="5884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrderHistory -->
+        <test-method signature="getActiveOrders() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="getActiveOrders" finished-at="2020-12-13T10:19:21Z" duration-ms="5856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getActiveOrders -->
+        <test-method signature="resetAddress() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="resetAddress" finished-at="2020-12-13T10:19:21Z" duration-ms="5827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAddress -->
+        <test-method signature="logoutCustomer() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="logoutCustomer" finished-at="2020-12-13T10:19:22Z" duration-ms="6198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutCustomer -->
+        <test-method signature="registerCustomer() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="registerCustomer" finished-at="2020-12-13T10:19:22Z" duration-ms="6192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerCustomer -->
+        <test-method signature="getShoppingCart() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="getShoppingCart" finished-at="2020-12-13T10:19:22Z" duration-ms="6096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getShoppingCart -->
+        <test-method signature="deleterCustomer() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="deleterCustomer" finished-at="2020-12-13T10:19:21Z" duration-ms="5905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleterCustomer -->
+        <test-method signature="resetPhoneNumber() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="resetPhoneNumber" finished-at="2020-12-13T10:19:22Z" duration-ms="6110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPhoneNumber -->
+        <test-method signature="loginCustomer() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="loginCustomer" finished-at="2020-12-13T10:19:22Z" duration-ms="6042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCustomer -->
+        <test-method signature="resetPassword() throws java.lang.Exception" started-at="2020-12-13T10:19:15Z" name="resetPassword" finished-at="2020-12-13T10:19:22Z" duration-ms="6075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPassword -->
+      </class> <!-- com.cs5500.NEUEat.controller.CustomerControllerTest -->
+      <class name="com.cs5500.NEUEat.controller.RestaurantControllerTest">
+        <test-method signature="getRestaurantById() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="getRestaurantById" finished-at="2020-12-13T10:19:22Z" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantById -->
+        <test-method signature="searchRestaurants() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="searchRestaurants" finished-at="2020-12-13T10:19:22Z" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchRestaurants -->
+        <test-method signature="getRestaurantInformation() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="getRestaurantInformation" finished-at="2020-12-13T10:19:22Z" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRestaurantInformation -->
+        <test-method signature="registerRestaurant() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="registerRestaurant" finished-at="2020-12-13T10:19:22Z" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerRestaurant -->
+        <test-method signature="getActiveOrders() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="getActiveOrders" finished-at="2020-12-13T10:19:22Z" duration-ms="70" status="FAIL">
+          <exception class="org.springframework.web.util.NestedServletException">
+            <message>
+              <![CDATA[Request processing failed; nested exception is java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+at com.cs5500.NEUEat.controller.RestaurantControllerTest.getActiveOrders(RestaurantControllerTest.java:122)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+at org.testng.TestRunner$1.run(TestRunner.java:570)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:717)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:601)
+at org.testng.TestRunner.run(TestRunner.java:502)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NullPointerException
+at com.cs5500.NEUEat.service.OrderServiceImpl.lambda$restaurantGetActiveOrders$5(OrderServiceImpl.java:201)
+at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+at com.cs5500.NEUEat.service.OrderServiceImpl.restaurantGetActiveOrders(OrderServiceImpl.java:202)
+at com.cs5500.NEUEat.controller.RestaurantController.getActiveOrders(RestaurantController.java:124)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+... 58 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.web.util.NestedServletException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getActiveOrders -->
+        <test-method signature="updateRestaurantInformation() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="updateRestaurantInformation" finished-at="2020-12-13T10:19:22Z" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateRestaurantInformation -->
+        <test-method signature="getAllRestaurants() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="getAllRestaurants" finished-at="2020-12-13T10:19:22Z" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllRestaurants -->
+        <test-method signature="resetAddress() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="resetAddress" finished-at="2020-12-13T10:19:22Z" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAddress -->
+        <test-method signature="addDishToMenu() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="addDishToMenu" finished-at="2020-12-13T10:19:22Z" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDishToMenu -->
+        <test-method signature="getOrderHistory() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="getOrderHistory" finished-at="2020-12-13T10:19:22Z" duration-ms="210" status="FAIL">
+          <exception class="org.springframework.web.util.NestedServletException">
+            <message>
+              <![CDATA[Request processing failed; nested exception is java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+at com.cs5500.NEUEat.controller.RestaurantControllerTest.getOrderHistory(RestaurantControllerTest.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+at org.testng.TestRunner$1.run(TestRunner.java:570)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:717)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:601)
+at org.testng.TestRunner.run(TestRunner.java:502)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NullPointerException
+at com.cs5500.NEUEat.service.OrderServiceImpl.lambda$restaurantFindPastOrders$6(OrderServiceImpl.java:209)
+at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+at com.cs5500.NEUEat.service.OrderServiceImpl.restaurantFindPastOrders(OrderServiceImpl.java:210)
+at com.cs5500.NEUEat.controller.RestaurantController.getOrderHistory(RestaurantController.java:133)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+... 58 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.web.util.NestedServletException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrderHistory -->
+        <test-method signature="removeDishToMenu() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="removeDishToMenu" finished-at="2020-12-13T10:19:22Z" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDishToMenu -->
+        <test-method signature="loginRestaurant() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="loginRestaurant" finished-at="2020-12-13T10:19:22Z" duration-ms="487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginRestaurant -->
+        <test-method signature="logoutRestaurant() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="logoutRestaurant" finished-at="2020-12-13T10:19:22Z" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutRestaurant -->
+        <test-method signature="resetPassword() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="resetPassword" finished-at="2020-12-13T10:19:22Z" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPassword -->
+        <test-method signature="resetPhoneNumber() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="resetPhoneNumber" finished-at="2020-12-13T10:19:22Z" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPhoneNumber -->
+        <test-method signature="deleterRestaurant() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="deleterRestaurant" finished-at="2020-12-13T10:19:22Z" duration-ms="398" status="FAIL">
+          <exception class="org.springframework.web.util.NestedServletException">
+            <message>
+              <![CDATA[Request processing failed; nested exception is java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:658)
+at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)
+at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)
+at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)
+at com.cs5500.NEUEat.controller.RestaurantControllerTest.deleterRestaurant(RestaurantControllerTest.java:255)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+at org.testng.TestRunner$1.run(TestRunner.java:570)
+at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:717)
+at org.testng.TestRunner.privateRunJUnit(TestRunner.java:601)
+at org.testng.TestRunner.run(TestRunner.java:502)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NullPointerException
+at com.cs5500.NEUEat.service.OrderServiceImpl.lambda$restaurantGetActiveOrders$5(OrderServiceImpl.java:201)
+at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)
+at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+at com.cs5500.NEUEat.service.OrderServiceImpl.restaurantGetActiveOrders(OrderServiceImpl.java:202)
+at com.cs5500.NEUEat.controller.RestaurantController.deleterRestaurant(RestaurantController.java:222)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+... 58 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.springframework.web.util.NestedServletException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleterRestaurant -->
+        <test-method signature="getMenu() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="getMenu" finished-at="2020-12-13T10:19:22Z" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMenu -->
+      </class> <!-- com.cs5500.NEUEat.controller.RestaurantControllerTest -->
+      <class name="com.cs5500.NEUEat.controller.DriverControllerTest">
+        <test-method signature="deleterDriver() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="deleterDriver" finished-at="2020-12-13T10:19:22Z" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleterDriver -->
+        <test-method signature="resetAddress() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="resetAddress" finished-at="2020-12-13T10:19:22Z" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAddress -->
+        <test-method signature="getDriverById() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="getDriverById" finished-at="2020-12-13T10:19:22Z" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriverById -->
+        <test-method signature="getActiveOrder() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="getActiveOrder" finished-at="2020-12-13T10:19:22Z" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getActiveOrder -->
+        <test-method signature="logoutDriver() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="logoutDriver" finished-at="2020-12-13T10:19:23Z" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutDriver -->
+        <test-method signature="getPendingOrders() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="getPendingOrders" finished-at="2020-12-13T10:19:22Z" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPendingOrders -->
+        <test-method signature="loginDriver() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="loginDriver" finished-at="2020-12-13T10:19:23Z" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDriver -->
+        <test-method signature="getOrderHistory() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="getOrderHistory" finished-at="2020-12-13T10:19:22Z" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrderHistory -->
+        <test-method signature="resetPhoneNumber() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="resetPhoneNumber" finished-at="2020-12-13T10:19:22Z" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPhoneNumber -->
+        <test-method signature="resetPassword() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="resetPassword" finished-at="2020-12-13T10:19:22Z" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetPassword -->
+        <test-method signature="registerDriver() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="registerDriver" finished-at="2020-12-13T10:19:22Z" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerDriver -->
+        <test-method signature="acceptOrder() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="acceptOrder" finished-at="2020-12-13T10:19:22Z" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptOrder -->
+        <test-method signature="finishOrder() throws java.lang.Exception" started-at="2020-12-13T10:19:22Z" name="finishOrder" finished-at="2020-12-13T10:19:23Z" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishOrder -->
+      </class> <!-- com.cs5500.NEUEat.controller.DriverControllerTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

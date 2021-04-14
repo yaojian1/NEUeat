@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 46, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 8.221 s <<< FAILURE! - in TestSuite
+getActiveOrders on getActiveOrders(com.cs5500.NEUEat.controller.RestaurantControllerTest)(com.cs5500.NEUEat.controller.RestaurantControllerTest)  Time elapsed: 0.028 s  <<< FAILURE!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.cs5500.NEUEat.controller.RestaurantControllerTest.getActiveOrders(RestaurantControllerTest.java:122)
+Caused by: java.lang.NullPointerException
+	at com.cs5500.NEUEat.controller.RestaurantControllerTest.getActiveOrders(RestaurantControllerTest.java:122)
+
+getOrderHistory on getOrderHistory(com.cs5500.NEUEat.controller.RestaurantControllerTest)(com.cs5500.NEUEat.controller.RestaurantControllerTest)  Time elapsed: 0.01 s  <<< FAILURE!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.cs5500.NEUEat.controller.RestaurantControllerTest.getOrderHistory(RestaurantControllerTest.java:136)
+Caused by: java.lang.NullPointerException
+	at com.cs5500.NEUEat.controller.RestaurantControllerTest.getOrderHistory(RestaurantControllerTest.java:136)
+
+deleterRestaurant on deleterRestaurant(com.cs5500.NEUEat.controller.RestaurantControllerTest)(com.cs5500.NEUEat.controller.RestaurantControllerTest)  Time elapsed: 0.007 s  <<< FAILURE!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.cs5500.NEUEat.controller.RestaurantControllerTest.deleterRestaurant(RestaurantControllerTest.java:255)
+Caused by: java.lang.NullPointerException
+	at com.cs5500.NEUEat.controller.RestaurantControllerTest.deleterRestaurant(RestaurantControllerTest.java:255)
+
+addOrderToCart on addOrderToCart(com.cs5500.NEUEat.controller.OrderControllerTest)(com.cs5500.NEUEat.controller.OrderControllerTest)  Time elapsed: 0.013 s  <<< FAILURE!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.cs5500.NEUEat.controller.OrderControllerTest.addOrderToCart(OrderControllerTest.java:59)
+Caused by: java.lang.NullPointerException
+	at com.cs5500.NEUEat.controller.OrderControllerTest.addOrderToCart(OrderControllerTest.java:59)
+
